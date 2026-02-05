@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    outline: none;
+}
+
+:root {
+    --purple-50: #f4eaff;
+    --purple-100: #e9dcfa;
+    --purple-200: #cdb3f0;
+    --purple-300: #b186e5;
+    --purple-400: #9460db;
+    --purple-500: #6b36c8;
+    --purple-600: #5b2ca0;
+    --purple-700: #4c2177;
+    --purple-800: #441f88;
+    --purple-900: #2a0e4d;
+
+    --gray-200: #e8e8e8;
+    --gray-400: #505861;
+    --black: #171717;
+    --white: #FAF7FF;
+
+    --error: #e63946;
+
+    --shadow-sm: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 0.25rem 0.75rem rgba(107, 54, 200, 0.3);
+    --shadow-lg: 0 0.5rem 1.5rem rgba(107, 54, 200, 0.2);
+
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 3rem;
+    --spacing-2xl: 4rem;
+
+    --text-sm: 0.75rem;
+    --text-base: 1rem;
+    --text-lg: 1.25rem;
+    --text-xl: 1.5rem;
+    --text-2xl: 2rem;
+    --text-3xl: 2.5rem;
+
+    --radius-sm: 0.25rem;
+    --radius-md: 0.5rem;
+    --radius-lg: 1rem;
+    --radius-xl: 2rem;
+    --radius-full: 50%;
+
+    --transition-default: all 0.3s ease;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--white);
+    line-height: 1.6;
+    color: var(--black);
+}
+
+main {
+    flex: 1;
+}
+
+.section-container {
+    max-width: 70rem;
+    margin: 0 auto;
+    padding: var(--spacing-xl) var(--spacing-md);
+    scroll-margin-top: 6rem;
+}
+
+.buttons-container {
+    display: flex;
+    gap: var(--spacing-sm);
+}
+
+.botao,
+.botao-outline {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    border: 0.15rem solid transparent;
+    border-radius: var(--radius-md);
+    font-size: var(--text-base);
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    transition: var(--transition-default);
+}
+
+.botao {
+    border-color: var(--purple-500);
+    background-color: var(--purple-500);
+    color: var(--white);
+}
+
+.botao:hover {
+    border-color: var(--purple-800);
+    background-color: var(--purple-800);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-0.25rem);
+}
+
+.botao-outline {
+    border-color: var(--purple-500);
+    background-color: transparent;
+    color: var(--purple-500);
+}
+
+.botao-outline:hover {
+    border-color: var(--purple-500);
+    background-color: var(--purple-500);
+    color: var(--white);
+    transform: translateY(-0.25rem);
+}
+
+.botao.botao-sm,
+.botao-outline.botao-sm {
+    min-width: 6rem;
+    padding: 0.25rem var(--spacing-sm);
+    border-width: 0.125rem;
+    border-radius: 0.25rem;
+    font-size: var(--text-sm);
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 5rem;
+    border-bottom: var(--spacing-xs) solid var(--gray-200);
+    background-color: var(--purple-800);
+    box-shadow: var(--shadow-sm);
+}
+
+header a {
+    font-weight: 600;
+    color: var(--white);
+    transition: color 0.3s ease;
+}
+
+header a:hover {
+    color: var(--purple-100);
+}
+
+#titulo {
+    font-size: var(--text-2xl);
+    font-weight: 700;
+}
+
+.menu-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 70rem;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 var(--spacing-md);
+}
+
+.menu-list {
+    display: flex;
+    gap: var(--spacing-lg);
+    list-style: none;
+}
+
+.menu-list a {
+    padding: var(--spacing-xs);
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-2xl);
+    min-height: calc(100vh - 5rem);
+}
+
+.hero-content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.hero-content span {
+    font-size: var(--text-xl);
+    font-weight: 700;
+}
+
+.hero-content h1 {
+    font-size: var(--text-3xl);
+    font-weight: 700;
+}
+
+.hero-content p,
+.about-content p,
+.contact-info p {
+    font-size: var(--text-lg);
+    color: var(--gray-400);
+}
+
+.hero-image {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 100%;
+    border-radius: var(--radius-xl);
+}
