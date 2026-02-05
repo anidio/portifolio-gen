@@ -100,12 +100,87 @@
 
         </section>
 
-        <section id="projects">
+        <section id="projects" class="section-container projects-container">
+            <h2>Meus Projetos</h2>
 
+            <div class="swiper projects-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+
+                        <article class="project-card">
+                            <figure class="project-image">
+                                <img src="./assets/icons/languages/github.svg"
+                                alt="Ícone GitHub">
+                            </figure>
+
+                            <div class="project-content">
+                                <h3>Projeto Github</h3>
+                                <p>Projeto Desenvolvido no GitHub</p>
+
+                                <div class="project-tags">
+                                    <span class="tag">GitHub</span>
+                                </div>
+
+                                <div class="project-buttons">
+                                    <a href="#" target="_blank" class="botao botao-sm">
+                                        GitHub
+                                    </a>
+                                    <a href="#" target="_blank" class="botao-outline botao-sm">
+                                        Deploy
+                                    </a>
+                                </div>
+                            </div>
+
+                        </article>
+                    </div>
+                </div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+
+                <div class="swiper-pagination"></div>
+            </div>
         </section>
 
-        <section id="contact">
+        <section id="contact" class="section-container contact-container">
 
+            <article class="contact-info">
+                <h2>Entre em Contato</h2>
+                <p>Sinta-se à vontade para entrar em contato comigo!</p>
+
+                <div class="social-container">
+                    <a href="#" target="_blank" class="social-icon" aria-label="LinkedIn">
+                        <img src="./assets/icons/social/linkedin.svg" alt="Link para o LinkedIn">
+                    </a>
+                    <a href="#" target="_blank" class="social-icon" aria-label="GitHub">
+                        <img src="./assets/icons/social/github.svg" alt="Link para o GitHub">
+                    </a>
+                    <a href="#" target="_blank" class="social-icon" aria-label="Instagram">
+                        <img src="./assets/icons/social/instagram.svg" alt="Link para o Instagram">
+                    </a>
+                </div>
+            </article>
+
+            <form id="formulario">
+
+                <label for="nome">Nome</label>
+                <input id="nome" name="nome" type="text" placeholder="Digite o seu nome completo">
+                <span id="erro-nome"></span>
+
+                <label for="email">E-mail</label>
+                <input id="email" name="email" type="text" placeholder="Digite o seu e-mail">
+                <span id="erro-email"></span>
+
+                <label for="assunto">Assunto</label>
+                <input id="assunto" name="assunto" type="text" placeholder="Digite o assunto da mensagem">
+                <span id="erro-assunto"></span>
+
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" placeholder="Escreva a sua mensagem aqui..."></textarea>
+                <span id="erro-mensagem"></span>
+
+                <button class="botao" type="submit">Enviar Mensagem</button>
+            </form>
         </section>
 
     </main>
