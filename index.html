@@ -65,44 +65,6 @@
         </section>
 
         <section id="about" class="section-container about-container">
-            <figure class="about-image">
-                <img src="./assets/img/avatar_dev_man.svg" alt="Foto do perfil">
-            </figure>
-
-            <article class="about-content">
-                <h2>Sobre mim</h2>
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                    Autem ut voluptatum eveniet. Maiores asperiores quaerat ipsam 
-                    consequuntur quis quos, tempora in explicabo eum ratione id 
-                    commodi voluptates, dolorem, doloremque iste?
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Excepturi nisi, illo officia hic quae omnis dolorem provident. 
-                    Dolorem, rem ratione? Dolor molestias nihil illum veniam laborum 
-                    maiores eos harum dicta.
-                </p>
-
-                <div class="about-buttons-data">
-                    <div class="buttons-container">
-                        <a href="#" target="_blank" class="botao">GitHub</a>
-                        <a href="#" target="_blank" class="botao-outline">Currículo</a>
-                    </div>
-
-                    <div>
-                        <div>
-                            <span class="data-number">100</span>
-                        <span class="data-label">Seguidores</span>
-                        </div>
-                        <div>
-                            <span class="data-number">10</span>
-                            <span class="data-label">Repositórios</span>
-                        </div>
-                    </div>
-                </div>
-
-            </article>
 
         </section>
 
@@ -111,34 +73,7 @@
 
             <div class="swiper projects-swiper">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-
-                        <article class="project-card">
-                            <figure class="project-image">
-                                <img src="./assets/icons/languages/github.svg"
-                                alt="Ícone GitHub">
-                            </figure>
-
-                            <div class="project-content">
-                                <h3>Projeto Github</h3>
-                                <p>Projeto Desenvolvido no GitHub</p>
-
-                                <div class="project-tags">
-                                    <span class="tag">GitHub</span>
-                                </div>
-
-                                <div class="project-buttons">
-                                    <a href="#" target="_blank" class="botao botao-sm">
-                                        GitHub
-                                    </a>
-                                    <a href="#" target="_blank" class="botao-outline botao-sm">
-                                        Deploy
-                                    </a>
-                                </div>
-                            </div>
-
-                        </article>
-                    </div>
+                    
                 </div>
 
                 <div class="swiper-button-next"></div>
@@ -167,7 +102,11 @@
                 </div>
             </article>
 
-            <form id="formulario">
+            <form id="formulario" action="https://formsubmit.co/seu-email@exemplo.com" method="POST">
+
+                <input type="hidden" name="_next" value="./success.html">
+                <input type="hidden" name="_subject" value="Novo contato do portfólio">
+                <input type="hidden" name="_captcha" value="false">
 
                 <label for="nome">Nome</label>
                 <input id="nome" name="nome" type="text" placeholder="Digite o seu nome completo">
@@ -195,6 +134,12 @@
     <footer>
         Desenvolvido por Isaías Roberto - 2026
     </footer>
+
+    <!-- SWIPER JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Script JavaScript-->
+    <script src="assets/js/script.js"></script>
     
 </body>
 </html>

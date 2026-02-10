@@ -388,7 +388,8 @@ header a:hover {
     justify-content: center;
     align-items: center;
     gap: 0.75rem;
-    margin-top: var(--spacing-sm);
+    margin-top: auto; 
+    padding-top: var(--spacing-sm); 
 }
 
 .swiper-wrapper {
